@@ -1,0 +1,30 @@
+// Sass函數 Scss語法 拿一顆無用的按鈕練習看看 
+.button-md {
+    box-sizing: border-box;
+    display: inline-block;
+    padding-block: map-get($spacers, 2); // 8px
+    padding-inline: map-get($spacers, 6); // 32px
+    line-height: $line-height-base;
+    font-weight: $font-weight-normal;
+    border-radius: $btn-border-radius;
+    border: map-get($border-widths, 1) solid map-get($theme-colors, "success");
+
+    &.button-filled {
+        background-color: map-get($theme-colors, "success");
+        color: map-get($colors, "white");
+    }
+
+    &.button-unfilled {
+        background-color: map-get($colors, "white");
+        color: map-get($colors, "green");
+        
+        &:hover {
+            background-color: map-get($theme-colors, "success");
+            color: map-get($colors, "white");
+        }
+    }
+
+  }
+
+
+

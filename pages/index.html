@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Assignment</title>
+  </head>
+  <body>
+  <div class="d-flex">
+    <%- include('./layout/header', {page: 'assignment'}); -%>
+    
+    <main class="main-contents px-6 py-4">
+      <header class="d-flex justify-content-between align-items-center">
+          <nav class="navbar navbar-expand-lg d-flex gap-5">
+            <h2 class="fs-4 fw-bold">Assignment</h2>
+            <!-- All Courses 下拉選單 -->
+            <div class="dropdown">
+                <button class="btn fw-bold border-0 p-0" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+                  All Courses
+                  <span class="material-symbols-outlined text-success align-middle ms-2">
+                    keyboard_arrow_down
+                  </span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">這裡不知道要放啥</a></li>
+                </ul>
+            </div>
+          </nav>
+          <div class="icon-group">
+              <a class="" href="#">
+                <span class="material-symbols-outlined align-bottom ">
+                  search
+                </span>
+              </a>
+              <a class="" href="#">
+                <span class="material-symbols-outlined align-bottom">
+                  notifications_active
+                </span>
+              </a>
+          </div>
+      </header>
+
+      <!-- header 下方開始 -->
+      <section class="assignment-content">
+        <!-- 下方內容的頭部 -->
+        <div class="comments-navbar mb-1">
+          <div class="d-flex justify-content-between align-items-center">
+            <button class="btn fw-bold d-flex align-items-center" 
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapseFirst" aria-expanded="false" aria-controls="collapseFirst">
+              All (4)
+              <span class="material-symbols-outlined text-success ms-2 ">
+                keyboard_arrow_down
+              </span>
+            </button>
+            <div class="text-secondary fs-8">2 comments</div>
+            </div>      
+        </div>  
+        <div class="d-flex gap-3">
+          <!-- 左半邊展開內容 -->
+          <section class="collapsible-list">
+            <div class="assignment-collapse-list">
+              <div class="collapse" id="collapseFirst">
+                <div class="list-group">
+                  <div data-bs-toggle="collapse" data-bs-target="#collapseSecond"  aria-current="true">
+                    <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex  justify-content-between text-dark">
+                      <h5 class="mb-1 fs-8">Chapter Assignment 2</h5>
+                      <small class="fs-8">4 hrs ago</small>
+                    </div>
+                    <div class="d-flex  justify-content-between">
+                      <p class="mb-1 fw-bold fs-6">Please check this file…</p>
+                      <small class="fs-8 text-secondary">Emily Wang</small>
+                  </div>
+                  </a>
+                </div>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex  justify-content-between text-dark">
+                      <h5 class="mb-1 fs-8">Chapter Assignment 1</h5>
+                      <small class="fs-8">12 hrs ago</small>
+                    </div>
+                    <div class="d-flex  justify-content-between">
+                      <p class="mb-1 fw-bold fs-6">My Homework</p>
+                      <small class="fs-8 text-secondary">David Xu</small>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex justify-content-between text-dark fs-8">
+                      <h5 class="mb-1 fs-8">Final Assignment</h5>
+                      <small class="fs-8">18 hrs ago</small>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="mb-1 fw-bold fs-6">Have a problem with this…</p>
+                      <small class="fs-8 text-secondary">Tony Wei</small>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex justify-content-between text-dark fs-8">
+                      <h5 class="mb-1 fs-8">Final Assignment</h5>
+                      <small class="fs-8">19 hrs ago</small>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="mb-1 fw-bold fs-6">Did I do it right?</p>
+                      <small class="fs-8 text-secondary">Christina Lin</small>
+                    </div>
+                  </a>
+            </div>
+          </div>
+            </div>
+          </section>
+          <!-- 右半邊展開內容 -->
+          <!-- 再加一層ID才能，在收合母選單時才能一起被收合不用一定要點擊原本的觸發元素> -->
+          <div id="collapseFirst">
+          <section class="expanded-card collapse" id="collapseSecond" data-bs-toggle="collapse">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between align-items-center">
+              <div>
+              <p class="m-0 fs-8 mb-1 ">Chapter Assignment 2 / HTML&CSS</p>
+              <h5 class="fw-bold fs-6">Please check this file for me, thanks!</h5>  
+              </div>
+              <a href="">
+              <span class="material-symbols-outlined">more_vert</span>
+              </a>
+              </div>
+              <div class="card-body pb-7">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img src="../assets/images/emilywang.jpeg" alt="rounded-img"  width="40" height="40" class="rounded-circle object-fit-cover">
+                  </div>
+                  <div class="flex-grow-1 ms-2 border-bottom">
+                    <h5 class="card-title fs-6 fw-bold mb-1">Emily Wang</h5>
+                    <time class="fs-8 text-secondary" datetime="10:38">10:38 AM (4 hours ago)</time>
+                    <p class="card-text mt-3">Hi Teacher, 
+                      the attached file is my homework of chapter 2. 
+                      And here comes a question: Why in the following code the height of the div is bigger than the height of the <code>img</code> ? 
+                      There is a gap below the image, but it doesn’t seems to be a padding/margin. 
+                      What is the gap or extra space below image?
+                    </p>
+                    <a href="#" class="btn btn-light text-dark fw-bold border-light-subtle mb-3" download>
+                      <span class="material-symbols-outlined align-bottom">
+                        attach_file
+                        </span>
+                      HW-2-David.zip
+                    </a>                      
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img src="../assets/images/andychen.jpeg" alt="rounded-img"  width="40" height="40" class="rounded-circle object-fit-cover">
+                  </div>
+                  <div class="flex-grow-1 ms-2">
+                    <div class="icon-bar d-flex justify-content-between">
+                      <h5 class="card-title fs-6 fw-bold mb-1">Andy Chen (You)</h5>
+                      <div class="icon-group">
+                        <a href="#">
+                          <span class="material-symbols-outlined hollow-icon">
+                            grade
+                            </span>
+                        </a>
+                        <a href="">
+                          <span class="material-symbols-outlined">
+                            edit
+                            </span>
+                        </a>  
+                      </div>
+                    </div>
+                    <time class="fs-8 text-secondary" datetime="13:24">13:24 AM (1 hours ago)</time>
+                    <p class="card-text mt-3">Hi David, by default, an image is rendered inline, 
+                      like a letter so it sits on the same line that a, b, c and d sit on. 
+                      There is space below that line for the descenders you find on letters like g, j, p and q.
+                      <div>
+                        <p>You can: </p>
+                        <p>• adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the <code>middle</code> ) or 　</p>
+                        <p>• change the <code>display</code> so it isn’t inline.</p>  
+                      </div>
+                    </p>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          <!-- 右半邊展開的 觸發btn內容 -->
+            <div class="d-flex justify-content-between align-items-center position-relative mt-3">
+                <!--  頁腳的icon們  -->
+                <div class="icon-group">
+                  <span class="material-symbols-outlined">chevron_left</span>
+                  <span class="material-symbols-outlined">chevron_right</span>  
+                </div>
+                <div class="d-flex gap-3">
+                  <button type="button" class="btn btn-outline-success px-6 py-2 ">Mark as read</button>
+                  <button class="btn btn-success px-6 py-2" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#collapseButton" aria-expanded="false" aria-controls="collapseExample">
+                  Reply</button>
+                </div>
+                <!--  編輯區的卡片頁面  -->
+                <div class="collapse position-absolute end-0 bottom-0 w-100" id="collapseButton">
+                  <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                      <div class="font-btn me-3">
+                        <button class="btn btn fw-bold px-2 border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Body Text
+                          <span class="material-symbols-outlined align-middle">
+                            arrow_drop_down
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><p class="dropdown-item fs-4 fw-bold" href="#">Title</p></li>
+                          <li><p class="dropdown-item fs-5 fw-bold" href="#">Subtitle</p></li>
+                          <li><p class="dropdown-item fs-6" href="#">Text</p></li>
+                        </ul>
+                      </div>
+                      <div class="icon-group">
+                        <a href="#">
+                          <span class="material-symbols-outlined align-middle">format_bold</span>
+                        </a>
+                        <a href="#">
+                          <span class="material-symbols-outlined align-middle">format_italic</span>
+                        </a>
+                        <a href="#">
+                          <span class="material-symbols-outlined align-middle">list</span>
+                        </a>
+                        <a href="#">
+                          <span class="material-symbols-outlined align-middle">format_list_numbered</span>
+                        </a>
+                        <a href="#">
+                          <span class="material-symbols-outlined align-middle">image</span>
+                        </a>
+                        <a href="#">
+                          <span class="material-symbols-outlined align-middle">attachment</span>
+                        </a>
+                        <a href="#">
+                          <span class="material-symbols-outlined align-middle">code</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card-body py-1">
+                        <textarea class="form-control border-0" placeholder="Reply an answer…" style="height: 280px">
+                        </textarea>
+                      <div class="d-flex justify-content-end mt-2 gap-2 ">
+                      <button class="btn btn-outline-success px-6 py-2" 
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseButton" aria-expanded="false" aria-controls="collapseButton">
+                        cancel</button>        
+                      <button class="button-md button-filled" type="button">
+                        Reply</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+          </section>
+          </div> 
+        </div>
+      </section>
+  
+
+
+   
+
+
+
+
+
+    </main>
+  </div>
+
+
+
+
+
+
+
+
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

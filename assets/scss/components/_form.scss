@@ -1,0 +1,25 @@
+// -36px控假元素空間改 -24 有12px假元素空間距離
+// 向容器外推 -36+pl24= -12 假空間 再ml+16推回來放在容器裡面再補 +4px按鈕padding
+
+.form-check {
+    margin-left: 16px;
+
+    > input[type="checkbox"] {
+        font-size: map-get($font-sizes , 4 );
+        border: map-get($border-widths, 2) solid map-get($theme-colors, "dark");
+        margin-top: 0;        
+        border-radius: 0.1em;
+
+        &:checked {
+            background-color: $success;
+        }
+    }
+    
+}
+
+.form-control::placeholder {
+    color: #ced4da;
+  }
+
+ 
+ 

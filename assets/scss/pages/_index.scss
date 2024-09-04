@@ -1,0 +1,15 @@
+.content {
+  width: calc(100% - 296px);
+  // margin-left: auto;
+}
+
+.assignment-collapse-list {
+  width: 320px;
+  max-width: 100%; /* 確保寬度不超過父容器 */
+}
+
+.assignment-collapse-card {
+  width: calc(100% - 320px);
+  max-width: 100%; /* 確保寬度不超過父容器 */
+}
+

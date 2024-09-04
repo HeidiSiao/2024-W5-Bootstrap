@@ -1,0 +1,21 @@
+.aside-content {
+  width: 296px;
+}
+
+.main-contents {
+  width: calc(100% - 296px);
+  margin-left: auto;
+}
+
+// Scss結構 Sass變數 
+aside .nav-item  {
+  // border-left: 4px solid $light; 不要加不然會在切換頁時衝突
+  padding-inline-start: 20px;
+  padding-block: 4px;
+  a {  
+    color: $dark;  
+  }
+  &:hover {
+    background-color: $warning;
+  }
+}

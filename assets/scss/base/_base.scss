@@ -1,0 +1,34 @@
+// *,
+// *:before,
+// *:after {
+//     outline: 1px solid burlywood;
+// }
+
+body {
+    font-family: "Lato","Roboto Mono", sans-serif;
+    line-height: 1.5;
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+   
+}
+
+code {
+    font-family: "Roboto Mono", sans-serif;
+    color: $success;
+    background-color: $light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}

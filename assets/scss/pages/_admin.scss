@@ -1,0 +1,23 @@
+.page-active {
+    a {
+        color: $dark;
+        border-color: $success;
+
+        &:active {
+            color: $white;
+            background-color: $success;
+            border-color: $success;
+        }
+
+        &:hover {
+            color: $dark;
+            background-color: $yellow;
+            border-color: $success;
+        }
+
+        &:focus {
+            color: $white;
+            background-color: $success;
+        }
+    }
+}
