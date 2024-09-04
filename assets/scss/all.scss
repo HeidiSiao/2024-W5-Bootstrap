@@ -2,8 +2,8 @@
 // 不需要放reset!
 
 // 1. 元件、導入Bootstrap、卡老師自定義變數
-@import "../../node_modules/bootstrap/scss/functions";
-// @import "bootstrap/scss/functions"; //卡老師版本-functions
+// @import "../../node_modules/bootstrap/scss/functions";
+@import "bootstrap/scss/functions"; //卡老師版本-functions
 
 
 // 2. 雜項：如utilities、自定義的Bootstrap文件
@@ -13,8 +13,8 @@
 @import './components/button';
 
 // 3. 共用樣式、共同框架：layout
-@import "../../node_modules/bootstrap";
-// @import "bootstrap/scss/bootstrap"; //卡老師版本-bootstrap
+// @import "../../node_modules/bootstrap";
+@import "bootstrap/scss/bootstrap"; //卡老師版本-bootstrap
 @import './layout/header.scss';
 
 
